@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #f5f5f5;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo span {
+    color: red;
+}
+
+.logo .pp {
+    font-size: 12px;
+    color: gray;
+}
+
+.header .imge {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.header .imge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.search {
+    display: flex;
+    width: 40%;
+    max-width: 500px;
+}
+
+.search input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.search button {
+    padding: 10px 18px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+
+
+
+.navbar {
+    background: red;
+    padding: 18px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar ul a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar ul i {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    background-image: url("../Image/WhatsApp Image 2026-08-13 at 12.13.18 (24).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.hero span {
+    color: red;
+}
+
+.hero .text p {
+    margin-top: 10px;
+}
+
+.hero .text button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .text button a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+
+
+
+.product {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.product h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+
+.pro-cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+.cat {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 15px;
+    font-size: 13px;
+    background: white;
+    overflow: hidden;
+}
+
+.cat:hover {
+    transform: scale(1.03);
+}
+
+.cat img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cat h3 {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.cat p {
+    margin: 8px 0;
+    color: #666;
+    line-height: 1.4;
+}
+
+.cat h4 {
+    color: red;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.cat button {
+    padding: 10px;
+    color: white;
+    background: red;
+    border: none;
+    width: 80%;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cat button i {
+    margin-right: 5px;
+}
+
+
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    background: #eee;
+    justify-content: center;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.features .image {
+    font-size: 25px;
+}
+
+.feature-item h5 {
+    font-size: 15px;
+}
+
+.feature-item p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+
+
+
+.foo {
+    background: black;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.foo p {
+    font-size: 14px;
+}
+
+.foo .media {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.foo .media .image {
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .search {
+        width: 35%;
+    }
+
+    .cart {
+        font-size: 14px;
+    }
+
+    .pro-cont {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .cart {
+        font-size: 16px;
+    }
+
+
+
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+
+
+
+    .hero {
+        justify-content: center;
+        text-align: center;
+        padding: 50px 20px;
+        min-height: 280px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+
+
+
+    .product {
+        padding: 30px 15px;
+    }
+
+    .product h2 {
+        font-size: 25px;
+    }
+
+    .pro-cont {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .cat {
+        padding: 10px;
+    }
+
+    .cat img {
+        height: 160px;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .logo .pp {
+        font-size: 10px;
+    }
+
+    .header .imge {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+
+    .hero {
+        min-height: 250px;
+        padding: 30px 15px;
+    }
+
+    .hero .text h1 {
+        font-size: 22px;
+    }
+
+    .hero .text p {
+        font-size: 14px;
+    }
+
+
+
+
+    .pro-cont {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+    .cat img {
+        height: 200px;
+    }
+
+
+
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 25px 15px;
+    }
+
+    .feature-item {
+        justify-content: flex-start;
+        max-width: 300px;
+        margin: auto;
+        width: 100%;
+    }
+
+
+
+
+    .foo {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .foo p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .foo .media {
+        margin: 0;
+        font-size: 24px;
+    }
+
+}
