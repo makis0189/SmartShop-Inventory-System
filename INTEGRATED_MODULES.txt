@@ -1,0 +1,10 @@
+SMARTSHOP INTEGRATED MODULES
+- index.php (original storefront with links to all modules)
+- products.php / product_form.php / save_product.php / toggle_product.php
+- sales.php / process_sale.php / receipt.php
+- stock_alerts.php
+- reporting.php
+- config/db.php
+- includes/helpers.php
+- database.sql
+- Assets/ (original CSS, images, Font Awesome, plus inventory.css)

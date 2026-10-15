@@ -1,0 +1,11 @@
+Options -Indexes
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "DENY"
+</IfModule>
+
+<FilesMatch "^(database\.sql|README.*\.txt|CODE_CLEANUP_REPORT\.txt|INTEGRATED_MODULES\.txt|create_admin\.php)$">
+    Require all denied
+</FilesMatch>

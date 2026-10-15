@@ -1,0 +1,84 @@
+SMARTSHOP CODE CLEANUP REPORT
+============================
+
+What was cleaned
+----------------
+- Reformatted the inventory CSS into readable, multi-line rules.
+- Reformatted the HTML/PHP templates for Products, Product Form, Sales, Receipt,
+  Stock Alerts, and Reporting Dashboard.
+- Reformatted the Sales Management JavaScript into readable functions.
+- Reformatted core PHP logic in process_sale.php, save_product.php, and
+  toggle_product.php for easier maintenance.
+- Audited Assets/Image references across PHP, CSS, SQL, and project text files.
+
+Images retained (referenced by the current code)
+------------------------------------------------
+- Iphone.jpeg
+- Laptop.jpeg
+- T-shirt.jpeg
+- Snekears.jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (21).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (24).jpeg
+
+Images removed
+--------------
+Removed only files in Assets/Image that had no filename reference in the
+current project source, stylesheet, SQL, or documentation. 43 files were
+removed from this folder. The original uploaded ZIP remains unchanged.
+
+Validation performed
+--------------------
+- PHP syntax check passed for every PHP file in this project.
+- Remaining image references were checked against Assets/Image.
+- This was a static code and archive audit. A live XAMPP/MySQL test was not
+  performed in this environment; please test the cleaned build in XAMPP.
+
+Important
+---------
+Keep a backup of your current working project before replacing files.
+
+Removed filenames (43)
+----------------------
+- Bag.jpeg
+- Headset.jpeg
+- Toyi.jpeg
+- Watch.jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (1).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (10).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (11).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (12).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (13).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (14).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (15).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (16).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (17).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (18).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (19).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (2).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (20).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (22).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (23).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (25).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (3).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (4).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (5).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (6).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (7).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (8).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18 (9).jpeg
+- WhatsApp Image 2026-08-13 at 12.13.18.jpeg
+- WhatsApp Image 2026-08-13 at 22.13.35 (1).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.35 (2).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.35 (3).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.35 (4).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.35 (5).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.35 (6).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.35.jpeg
+- WhatsApp Image 2026-08-13 at 22.13.36 (1).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.36 (2).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.36 (3).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.36 (4).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.36 (5).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.36 (6).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.36 (7).jpeg
+- WhatsApp Image 2026-08-13 at 22.13.36.jpeg

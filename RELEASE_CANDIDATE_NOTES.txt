@@ -1,0 +1,21 @@
+SMARTSHOP RELEASE CANDIDATE NOTES
+
+Included in this package:
+- Login/logout with session regeneration and password_hash/password_verify support.
+- Role guards for admin, manager and cashier.
+- CSRF checks for login, product save, product status changes, sales and logout.
+- Sales now record the signed-in user on the sale and stock movement rows.
+- Environment-variable database configuration for deployment.
+- Basic Apache access restrictions and response security headers.
+- TEST_PLAN.md, SECURITY_REVIEW.md, DEPLOYMENT_GUIDE.md and README_PORTFOLIO.md.
+
+Static checks performed in the build environment:
+- PHP syntax: all 15 PHP files passed `php -l`.
+- Referenced local image assets scanned: 5 references found, 0 missing.
+- 6 image files remain in Assets/Image.
+
+Not performed here:
+- Live MySQL integration test, because the build environment does not have the PDO MySQL driver or access to the user's running XAMPP database.
+- Browser-based UI regression test, role workflow acceptance test, production penetration test, or backup restore test.
+
+Status: LOCAL RELEASE CANDIDATE. Run every applicable case in TEST_PLAN.md on the user's XAMPP instance before using real transactions or deploying publicly.
